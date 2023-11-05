@@ -1,13 +1,13 @@
 import { EnvironmentType, NodeConfig, NodeConfigType, connect, defaultConfig, mnemonicToSeed } from '@breeztech/react-native-breez-sdk';
+import { MNEMONIC_PHRASE, BREEZ_INVITE_CODE, BREEZ_API_KEY } from "@env"
 
 async function BreezNode() {
-    const phrase = process.env.MNEMONIC_PHRASE!;
-    const inviteCode = process.env.BREEZ_INVITE_CODE!;
-    const apiKey = process.env.BREEZ_INVITE_KEY!;
+    const phrase = MNEMONIC_PHRASE;
+    const inviteCode = BREEZ_INVITE_CODE;
+    const apiKey = BREEZ_API_KEY;
 
-    console.log(phrase, inviteCode, apiKey)
-
-    // const seed = await mnemonicToSeed(phrase);
+    const seed = await mnemonicToSeed(phrase);
+    console.log(seed);
     // const nodeConfig : NodeConfig = {
     // type: NodeConfigType.GREENLIGHT,
     // config: {
