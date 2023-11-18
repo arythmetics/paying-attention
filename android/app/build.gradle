@@ -81,9 +81,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace 'com.anonymous.firstApp'
+    namespace 'com.anonymous.paying_attention'
     defaultConfig {
-        applicationId 'com.anonymous.firstApp'
+        applicationId 'com.anonymous.paying_attention'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

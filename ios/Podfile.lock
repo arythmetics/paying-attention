@@ -18,18 +18,18 @@ PODS:
     - ExpoModulesCore
   - EXConstants (14.4.2):
     - ExpoModulesCore
-  - EXFileSystem (15.4.3):
+  - EXFileSystem (15.4.4):
     - ExpoModulesCore
   - EXFont (11.4.0):
     - ExpoModulesCore
   - EXImageLoader (4.3.0):
     - ExpoModulesCore
     - React-Core
-  - Expo (49.0.8):
+  - Expo (49.0.17):
     - ExpoModulesCore
   - ExpoKeepAwake (12.3.0):
     - ExpoModulesCore
-  - ExpoModulesCore (1.5.10):
+  - ExpoModulesCore (1.5.11):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
     - React-NativeModulesApple
@@ -665,12 +665,12 @@ SPEC CHECKSUMS:
   EXBarCodeScanner: 44783bf0be375ab18a838dcfef29dd648397000a
   EXCamera: 6e6e79bf01a2b8190268d93297d8e79a843d5ede
   EXConstants: ce5bbea779da8031ac818c36bea41b10e14d04e1
-  EXFileSystem: 941b273758aee14be2ecc671dacb4f10dd28c833
+  EXFileSystem: 2b826a3bf1071a4b80a8457e97124783d1ac860e
   EXFont: 738c44c390953ebcbab075a4848bfbef025fd9ee
   EXImageLoader: 34b214f9387e98f3c73989f15d8d5b399c9ab3f7
-  Expo: 900dc423a0e2c7e822b2c683a89426e82695fb27
+  Expo: 61f0ce2461122eb405d373e512a0dbc79804001a
   ExpoKeepAwake: be4cbd52d9b177cde0fd66daa1913afa3161fc1d
-  ExpoModulesCore: e5a168deba84f74c0e558befa31dbaea06c00af0
+  ExpoModulesCore: 51cb2e7ab4c8da14be3f40b66d54c1781002e99d
   EXSplashScreen: c0e7f2d4a640f3b875808ed0b88575538daf6d82
   FBLazyVector: 71803c074f6325f10b5ec891c443b6bbabef0ca7
   FBReactNativeSpec: 448e08a759d29a96e15725ae532445bf4343567c
@@ -716,6 +716,6 @@ SPEC CHECKSUMS:
   Yoga: 86fed2e4d425ee4c6eab3813ba1791101ee153c6
   ZXingObjC: 8898711ab495761b2dbbdec76d90164a6d7e14c5
 
-PODFILE CHECKSUM: b3436aee0f168ce8b09fecf0b8fff7ee094e4d3e
+PODFILE CHECKSUM: 2e1d165a6212273e4795ce46f0c4826167afe6b4
 
 COCOAPODS: 1.13.0

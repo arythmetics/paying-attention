@@ -1,4 +1,4 @@
-package com.anonymous.firstApp;
+package com.anonymous.paying_attention;
 
 import android.os.Build;
 import android.os.Bundle;
