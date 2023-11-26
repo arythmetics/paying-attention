@@ -2,16 +2,11 @@ import {
   StyleSheet,
   View,
   Text,
-  TextInput,
   Button,
-  ScrollView,
 } from "react-native";
 import React from "react";
-import WalletInfo from "./components/WalletInfo";
-
-import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import BreezNode from "./components/Breez";
+import FundNode from "./components/FundNode";
 
 type RootStackParamList = {
   Home: undefined;
@@ -29,10 +24,10 @@ const Home = ({navigation}: {navigation: HomeScreenNavigationProp}) => {
         onPress={() => navigation.navigate("WalletInfo")}
       />
       <Button 
-        title="Register Breez Node"
+        title="Fund Meditation Node"
         onPress={async () => {
           try {
-            await BreezNode();
+            await FundNode();
           } catch (error) {
             console.error(error);
           }
