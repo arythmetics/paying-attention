@@ -2,34 +2,35 @@ import {
   StyleSheet,
   View,
   Text,
-  Button,
-} from "react-native";
-import React from "react";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import FundNode from "./components/FundNode";
+  Button
+} from 'react-native'
+import React from 'react'
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
+import FundNode from './components/FundNode'
 
-type RootStackParamList = {
-  Home: undefined;
-  WalletInfo: undefined;
-};
+interface RootStackParamList {
+  Home: undefined
+  WalletInfo: undefined
+  [key: string]: undefined | object
+}
 
-type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'WalletInfo'>; 
+type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'WalletInfo'>
 
-const Home = ({navigation}: {navigation: HomeScreenNavigationProp}) => {
+const Home = ({ navigation }: { navigation: HomeScreenNavigationProp }): React.ReactElement => {
   return (
     <View style={styles.container}>
       <Text>Paying Attention</Text>
       <Button
         title="Connect Meditator's Wallet"
-        onPress={() => navigation.navigate("WalletInfo")}
+        onPress={() => { navigation.navigate('WalletInfo') }}
       />
-      <Button 
+      <Button
         title="Fund Meditation Node"
-        onPress={async () => {
+        onPress={() => {
           try {
-            await FundNode();
+            FundNode()
           } catch (error) {
-            console.error(error);
+            console.error(error)
           }
         }}
       />
@@ -40,10 +41,10 @@ const Home = ({navigation}: {navigation: HomeScreenNavigationProp}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+})
 
-export default Home;
+export default Home

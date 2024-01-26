@@ -1,13 +1,14 @@
-import { NavigationContainer } from '@react-navigation/native';
-import Home from './app/Home';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import WalletInfo from './app/components/WalletInfo';
-import BreezNodeProvider from './app/components/Breez';
-import FundNode from './app/components/FundNode';
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import Home from './app/Home'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import WalletInfo from './app/components/WalletInfo'
+import BreezNodeProvider from './app/components/Breez'
+import FundNode from './app/components/FundNode'
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator()
 
-export default function App() {
+export default function App (): React.ReactElement {
   return (
     <BreezNodeProvider>
       <NavigationContainer>
@@ -18,5 +19,5 @@ export default function App() {
         </Stack.Navigator>
       </NavigationContainer>
     </BreezNodeProvider>
-  );
-};
+  )
+}
