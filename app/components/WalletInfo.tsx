@@ -7,7 +7,6 @@ function WalletInfo (): React.ReactElement {
   const [scanned, setScanned] = useState(false)
 
   useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-floating-promises
     (async () => {
       try {
         const { status } = await BarCodeScanner.requestPermissionsAsync()
