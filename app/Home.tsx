@@ -26,13 +26,7 @@ const Home = ({ navigation }: { navigation: HomeScreenNavigationProp }): React.R
       />
       <Button
         title="Fund Meditation Node"
-        onPress={() => {
-          try {
-            FundNode()
-          } catch (error) {
-            console.error(error)
-          }
-        }}
+        onPress={() => { navigation.navigate('FundNode')}}
       />
     </View>
   )
